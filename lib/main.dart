@@ -18,7 +18,7 @@ class _QuoteListState extends State<QuoteList> {
 
   List<String> quotes = [
     'Damn this is crazy look at this blabalaba',
-    'Why is this blabaaababababaaba aala a ajaj'
+    'Why is this blabaaababababaaba aala a ajaj',
     'Amazing woww fd fd f f f f ff jsjs ssjsj '
   ];
 
@@ -32,6 +32,8 @@ class _QuoteListState extends State<QuoteList> {
         backgroundColor: Colors.deepOrange
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: quotes.map((quote) =>  Text(quote)).toList(),
         
       ),
